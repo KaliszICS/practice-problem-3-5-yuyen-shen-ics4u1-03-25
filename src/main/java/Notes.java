@@ -7,63 +7,32 @@ class Notes {
 	public static int dfs(String[][] arr) {
 
 		//start at the bottom left
-		int curRow = arr.length - 1; //last the row
-		int curCol = 0; //first column
+		int row = arr.length - 1;
+		int col = 0;
 
-		//keep track of number of moves
 		int noOfMoves = 0;
 
-		dfsHelper(arr, curRow, curCol, noOfMoves);
+		return dfsHelper(arr, row, col, noOfMoves);
 		
 	}
 
-	public static int dfsHelper(String[][] arr, int curRow, int curCol, int noOfMoves) {
+	public static int dfsHelper(String[][] arr, int row, int col, int moves) {
 
-		//base case
-		//going out of bounds (these are different for cols and rows)
-		//Reached the finish
-		//return (the finish and out of bounds are different)
-
-
-		// recursive call - increase no of moves
-		// go right (increase col)
-		// go up (decrease row)
+		// base case
+		// Goes out of bounds
+		// Reach the finish
+		// return number of moves
 
 
-		//return the minimum steps (up and right)
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//base case
-		//there isn't just one
-
-		//base case 1: When you go out of bounds
-
-		//base case 2: reach the finish
-		//check the value at a move and see if it is the finish
+		// recursive call - increase moves
+		// Go right (increase col)
+		// Go up (decrease row)
 
 
-		//recursive call to move right
+		// compare return the smallest one (that is valid)
 
-		//recursive call to move up
-
-		//compare and choose the pathway(noOfMoves) that was shorter
-		//ensure that the number you send back is a valid number.
-
-		//return the shorter pathway(noOfMoves)
-		
+		return 0; //replace this
 	}
+
+	
 }
